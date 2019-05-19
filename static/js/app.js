@@ -24,6 +24,7 @@ function tabulate(data) {
 // Calls function to display all data as table initially
 tabulate(tableData);
 
+// Function to change state names to abbreviations
 function changeStateAbbr(filterItem) {
 
     var abbr = "";
@@ -57,9 +58,6 @@ var submitButton = [];
 
 // When a filter input form is changed
 $(".form-control").on("keyup", function (e) {
-
-    // Reads input
-    var filterChange = e.target;
 
     // Changes value to lowercase and saves id and value to variables
     var filterValue = e.target.value.toLowerCase();

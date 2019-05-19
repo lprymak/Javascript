@@ -15,9 +15,8 @@
     <script>window.jQuery || document.write('<script src="/js/jquery-1.12.4.min.js">\x3C/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="static/css/style.css">
     <script src="static/js/shine.js-master/dist/shine.min.js"></script>
@@ -27,133 +26,130 @@
 <body>
     <div class="main">
 
-    <div class="wrapper">
+        <div class="wrapper">
 
-        <div class="container.fluid">
+            <div class="container.fluid">
 
-            <div class="jumbotron text-center title1">
-                <div class='overlay text-center'></div>
-                <div class='overlay3'></div>
-                <div class='topimage text-center'>
-                    <h1 class='glow text-center'>UFO Sightings</h1>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="container.fluid">
-
-            <div class="jumbotron text-center title2">
-                <div class='overlay2'></div>
-                <div class='overlay'></div>
-                <h1 id="headline" class="glow2" style="color: black; font-family: Wire One, sans-serif;">THE TRUTH IS OUT THERE</h1>
-            </div>
-
-            <script type="text/javascript">
-                var shine = new Shine(document.getElementById('headline'));
-
-                function handleMouseMove(event) {
-                    shine.light.position.x = 600;
-                    shine.light.position.y = 700;
-
-                    shine.draw();
-                }
-                window.addEventListener('scroll', handleMouseMove, false);
-            </script>
-
-        </div>
-
-    </div>
-    
-
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">UFO Sightings</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" visible="false">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        style="padding-right:5px; float: right;">
-                        Filters
-                    </button>
-                    <div class="dropdown-menu dropleft" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item btn-block B" type="button">Date</button>
-                        <li class="filter list-group-item">
-                            <input class="form-control filter" id="datetime" type="text" placeholder="1/11/2011">
-                        </li>
-                        <button class="dropdown-item btn-block B" type="button" disabled>City</button>
-                        <li class="filter list-group-item">
-                            <input class="form-control filter" id="city" type="text" placeholder="city">
-                        </li>
-                        <button class="dropdown-item btn-block B" type="button" disabled>State</button>
-                        <li class="filter list-group-item">
-                            <input class="form-control filter" id="state" type="text" placeholder="st">
-                        </li>
-                        <button class="dropdown-item btn-block B" type="button" disabled>Shape</button>
-                        <li class="filter list-group-item">
-                            <input class="form-control filter" id="shape" type="text" placeholder="shape">
-                        </li>
-                        <button class="dropdown-item btn-block B" type="button" id="submit">View
-                            Results</button>
-                        <button class="dropdown-item btn-block B" type="button" id="clear">Clear</button>
+                <div class="jumbotron text-center title1">
+                    <div class='overlay text-center'></div>
+                    <div class='overlay3'></div>
+                    <div class='topimage text-center'>
+                        <h1 class='glow text-center'>UFO Sightings</h1>
                     </div>
                 </div>
 
-                <li class="nav-item">
-                    <a class="nav-link" id="refresh">Refresh</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            </div>
 
-    <div class="row">
-        <div class="col-lg-12">
-                
-            <div id="table-area" class="">
+            <div class="container.fluid">
+
+                <div class="jumbotron text-center title2">
+                    <div class='overlay2'></div>
+                    <div class='overlay'></div>
+                    <h1 id="headline" class="glow2" style="color: black; font-family: Wire One, sans-serif;">THE TRUTH IS OUT THERE</h1>
+                </div>
+
+                <script type="text/javascript">
+                    var shine = new Shine(document.getElementById('headline'));
+
+                    function handleMouseMove(event) {
+                        shine.light.position.x = 600;
+                        shine.light.position.y = 700;
+
+                        shine.draw();
+                    }
+                    window.addEventListener('scroll', handleMouseMove, false);
+                </script>
+
+            </div>
+
+        </div>
+
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">UFO Sightings</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" visible="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="padding-right:5px; float: right;">
+                            Filters
+                        </button>
+                        <div class="dropdown-menu dropleft" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item btn-block B" type="button">Date</button>
+                            <li class="filter list-group-item">
+                                <input class="form-control filter" id="datetime" type="text" placeholder="1/11/2011">
+                            </li>
+                            <button class="dropdown-item btn-block B" type="button" disabled>City</button>
+                            <li class="filter list-group-item">
+                                <input class="form-control filter" id="city" type="text" placeholder="city">
+                            </li>
+                            <button class="dropdown-item btn-block B" type="button" disabled>State</button>
+                            <li class="filter list-group-item">
+                                <input class="form-control filter" id="state" type="text" placeholder="st">
+                            </li>
+                            <button class="dropdown-item btn-block B" type="button" disabled>Shape</button>
+                            <li class="filter list-group-item">
+                                <input class="form-control filter" id="shape" type="text" placeholder="shape">
+                            </li>
+                            <button class="dropdown-item btn-block B" type="button" id="submit">View
+                                Results</button>
+                            <button class="dropdown-item btn-block B" type="button" id="clear">Clear</button>
+                        </div>
+                    </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="refresh">Refresh</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div id="table-area" class="">
                     <div class="stars"></div>
                     <div class='overlay2'></div>
                     <div class='overlay3'></div>
-                <table id="ufo-table" class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th class="table-head">Date</th>
-                            <th class="table-head">City</th>
-                            <th class="table-head">State</th>
-                            <th class="table-head">Country</th>
-                            <th class="table-head">Shape</th>
-                            <th class="table-head">Duration</th>
-                            <th class="table-head">Comments</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-                <h1 class='status text-center'></h1>
+                    <table id="ufo-table" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="table-head">Date</th>
+                                <th class="table-head">City</th>
+                                <th class="table-head">State</th>
+                                <th class="table-head">Country</th>
+                                <th class="table-head">Shape</th>
+                                <th class="table-head">Duration</th>
+                                <th class="table-head">Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <h1 class='status text-center'></h1>
+                </div>
             </div>
         </div>
+
+        <div class="stars"></div>
+        <div class='overlay2'></div>
+        <div class='overlay3'></div>
+
     </div>
-
-    <div class="stars"></div>
-    <div class='overlay2'></div>
-    <div class='overlay3'></div>
-
-    </div>
-
-
-        
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
     <script src="static/js/data.js"></script>
     <script src="static/js/states.js"></script>
     <script src="static/js/app.js"></script>
     <script src="static/js/shine.js-master/dist/shine.min.js"></script>
-</body>
-<footer class="footer">
-        <span class="bottom">UFO Sightings</span>
-    </footer>
 
+</body>
+
+<footer class="footer">
+    <span class="bottom">UFO Sightings</span>
+</footer>
 
 </html>
