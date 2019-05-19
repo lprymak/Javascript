@@ -1,0 +1,507 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: PT, sans-serif;
+  background-color: black;
+}
+
+
+/* --------------------------- NAVBAR --------------------------- */
+
+.navbar {
+  position: sticky;
+  padding: 5px;
+  margin: 0;
+  z-index: 3;
+  background-color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 0;
+}
+.nav-link {
+  font-family: PT, sans-serif;
+  padding-left: 20%;
+  float: right;
+}
+.nav-link:hover, .nav-item:hover{
+  text-decoration: none !important;
+}
+.nav-link:visited , .nav-item:visited, .dropdown-toggle:visited{
+  text-decoration: none !important;
+}
+.nav-link:active , .nav-item:active{
+  text-decoration-line: none !important;
+}
+.navbar-nav {
+  list-style: none;
+  float: right;
+}
+.open>.dropdown-menu {
+  margin-right: 10%;
+  margin-top: 50%;
+  left: -100%;
+}
+.dropdown-item:hover {
+  color: black;
+  background-color: lightgray;
+  border: none;
+  text-decoration-line: none;
+}
+.dropdown-menu {
+  background-color: white;
+  margin-right: 10%;
+  margin-top: 50%;
+  left: -100%;
+}
+.dropdown-item {
+  color: #32f924;
+  padding-left: 5%;
+  background-color: white;
+  border: none;
+}
+
+
+/* --------------------------- LINKS---------------------------  */
+
+a, a:hover, a:active, a:visited {
+  color: #32f924;
+  text-decoration: none;
+}
+.btn-default:active:hover, .btn-default.active:hover, 
+.open>.dropdown-toggle.btn-default:hover, .btn-default:active:focus, 
+.btn-default.active:focus, .open>.dropdown-toggle.btn-default:focus, 
+.btn-default:active.focus, .btn-default.active.focus, 
+.open>.dropdown-toggle.btn-default.focus {
+  color: #32f924;
+  background-color: black;
+  text-shadow: none;
+}
+.btn-default:active:active, .btn-default.active:active, .open>.dropdown-toggle.btn-default:active, .btn-default:active:visited, .btn-default.active:focus, .open>.dropdown-toggle.btn-default:visited, .btn-default:active.visited, .btn-default.active.visited, .open>.dropdown-toggle.btn-default.visited {
+  color: #32f924;
+  background-color: black;
+  text-shadow: none;
+}
+.btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+  color: #32f924;
+  background-color: black;
+}
+.list-group-item {
+  background-color: white;
+}
+.btn:hover, .nav-item:hover, .navbar-brand:hover {
+  text-shadow: -1px 0px 20px #32f924, -1px -1px 3px #32f924, -2px 2px 5px #32f924, -1px -1px 8px #32f924;
+}
+
+
+
+/* --------------------------- TABLE --------------------------- */
+
+.table {
+  max-width: 95%;
+  margin-left: 2.5%;
+  z-index: 100;
+}
+#table-area th {
+  text-align: center;
+  color: #32f924;
+}
+#table-area th {
+  text-align: center;
+}
+#table-area th:first-child,
+#table-area th:nth-child(2),
+#table-area th:nth-child(6) {
+  min-width: 70px;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #cccccc12;
+}
+
+  
+/* --------------------------- LARGEST COMPONENTS --------------------------- */
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: auto;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  /* bottom: 0; */
+  left: 0;
+  min-height: 40px;
+  background: black;
+}
+.footer > .bottom {
+  position: absolute;
+  right: 0;
+  /* bottom: 0; */
+  left: 0;
+  padding: 5px;
+  background: black;
+}
+.loader {
+  margin-top: 50px;
+}
+.margin-top-50 {
+  margin-top: 50px;
+}
+.rest {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+
+.title1 {
+  position: relative;
+  top: 0%;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+  margin: 0;
+  background-image: url('../images/UFO_Portrait.jpg');
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position-y: 20;
+  z-index: 2;
+}
+.title2 {
+  position: relative;
+  height: 150px;
+  padding: 20px;
+  margin: 0;
+  background-image: url('../images/stars3.jpg');
+  z-index: 2;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  margin: 0;
+  background-image: linear-gradient(to top, black 1%, transparent 100%);
+}
+.overlay2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  margin: 0;
+  background-image: linear-gradient(to bottom, black 10%, transparent 100%);
+  z-index: -1;
+}
+.overlay3 {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  left: 0px;
+  top: 0px;
+  margin: 0;
+  background-image: linear-gradient(to bottom, black 1%, transparent 100%);
+  z-index: -1;
+}
+.topimage {
+  z-index: 3;
+  width: 100%;
+}
+.glow2 {
+  position: absolute;
+  top: 0px; left: 0; bottom: 0; right: 0;
+  width: 100%;
+  top: -20%;
+
+  display: table;
+  height: auto;
+
+  color: #fcfcfc;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: 70px;
+  font-family: 'Wire One', sans-serif;
+  font-weight: 50;
+
+  letter-spacing: 0.35em;
+  line-height: 1.2em;
+}
+.topimage h1 {
+  font-size: 70px;
+  opacity: 1;
+  color: transparent;
+  text-shadow: -5px -2px 3.5px #cccccc, -4px -9px 7px #cccccc, -3px 2px 16px #cccccc, -8px -3px 12px #cccccc;
+  top: 10%;
+  left: 10%;
+}
+.jumbotron {
+  background-color: black;
+}
+.jumbotron p {
+  font-size: 2rem;
+  opacity: 0;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+}
+.stars {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  background:#000 url('../images/stars3.jpg') repeat top center;
+  order: 0;
+  z-index:-1;
+}
+.glow {
+  position: absolute;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+.super {
+  font-family: 'Bungee', cursive;
+  font-weight: bolder;
+  font-stretch: extra-expanded;
+  background: url("../images/strwrd.png") repeat;
+  background-clip: text;
+  background-size: 40%;
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: jumbotron2 2.0s reverse linear;
+}
+
+  
+/* --------------------------- BUTTONS --------------------------- */
+
+button {
+  text-align: left;
+  font-weight: bold;
+}
+.btn-default {
+  color: #32f924 !important;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: black !important;
+  border: none;
+}
+#submit {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  top: 8%;
+}
+#clear {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 35%;
+}
+
+
+  
+/* --------------------------- FORMS --------------------------- */
+
+.ufo-form {
+  margin-top: 50px;
+}
+.filters .panel-body {
+  margin-top: 10px;
+  padding: 0;
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  color: #828282;
+  outline: none;
+}
+.form-control {
+  color: #828282;
+}
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #cccccc;
+}
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #cccccc;
+}
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #cccccc;
+  background-color: None;
+}
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #cccccc;
+}
+
+  
+/* --------------------------- MEDIA (MEDIUM SCREENS) --------------------------- */
+
+@media (max-width: 800px) {
+  #table-area td {
+    font-size: 1em;
+  }
+  .margin-top-50 {
+    margin-top: 0px;
+  }
+  .jumbotron h1, .jumbotron .h1 {
+    font-size: 50px;
+    top: 10%;
+  }
+  .jumbotron {
+    left: 0;
+  }
+  .title1 {
+    top: 20%;
+    height: 400px;
+  }
+  .topimage h1 {
+    top: -10%;
+  }
+  .glow h1 {
+    font-size: 40px;
+  }
+  .glow2 {
+    top: 0;
+    left: 4%;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar-toggler {
+    float: right;
+  }
+  .navbar-toggler-icon {
+    color: #03fc4e;
+  }
+  .navbar-collapse.in {
+    width: 100%;
+  }
+  .wrapper {
+    margin-bottom: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  .title1 {
+    height: 300px !important;
+    left: 12%;
+  }
+}
+
+
+
+/* --------------------------- MEDIA (SMALL SCREENS) --------------------------- */
+
+@media (max-width: 500px) {
+  .jumbotron {
+      background-position-x: 70%;
+  }
+  .jumbotron h1 {
+      margin-top: 50px;
+      font-size: 45px;
+  }
+  .title1 {
+    height: 350px;
+  }
+  .overlay3 {
+    top: -10px;
+  }
+  .topimage h1 {
+    top: -25%;
+    left: 9%;
+  }
+  #table-area thead {
+    display: none;
+  }
+  #table-area tr td:first-child {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: black;
+  }
+  #table-area tr td:last-child {
+    margin-bottom: 20px;
+  }
+  #table-area tr td:last-child::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    content: " ";
+    background: aliceblue;
+  }
+  #table-area td {
+    font-size: 1.25em;
+  }
+  #table-area tbody td {
+    display: block;
+    text-align: center;
+  }
+  #table-area tbody td::before {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    content: attr(data-th);
+  }
+}
+
+@media (max-width: 1000px) {
+  .title1 {
+    top: 80px;
+    width: 100%;
+  }
+  .navbar {
+    top: 0;
+  }
+}
+
+
+
+/* --------------------------- MEDIA (LARGE SCREENS) --------------------------- */
+
+@media (min-width: 768px) {
+  .title1 {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    margin: 0;
+    background-size: 120%;
+    background-position-y: 20;
+    z-index: 2;
+  }
+  .navbar {
+    position: sticky;
+  }
+}
+
+
+/* --------------------------- ANIMATIONS --------------------------- */
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #12b83b, 0 0 40px #12b83b, 0 0 50px #12b83b, 0 0 60px #12b83b, 0 0 70px #12b83b;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #03fc4e, 0 0 40px #03fc4e, 0 0 50px #03fc4e, 0 0 60px #03fc4e, 0 0 70px #03fc4e, 0 0 80px #03fc4e;
+  }
+}
