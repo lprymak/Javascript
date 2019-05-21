@@ -52,6 +52,33 @@ function changeStateAbbr(filterItem) {
     return abbr;
 };
 
+// Function to change country names
+function changeCountryAbbr(filterItem) {
+
+    // Define countries to use
+    countries = [{ name: "USA", abbr: "us" }, { name: "united states", abbr: "us" }, { name: "canada", abbr: "ca" }];
+    var abbr = "";
+
+    // Function to filter country data
+    if (filterItem.length > 2) {
+        function abbreviation(country) {
+            return country.name === filterItem;
+        }
+        if (filterItem.length === 3 && filterItem === 'usa') {
+            abbr = 'us';
+        }
+        else {
+            // Finds country abbreviation and changes to lowercase
+            abbr = countries.filter(abbreviation);
+            abbr = abbr[0]['abbr'].toLowerCase();
+        }
+    }
+    else {
+        abbr = filterItem;
+    }
+    return abbr;
+}
+
 // Defines filter object
 var filters = {};
 var submitButton = [];
@@ -110,6 +137,10 @@ filterButton.on('click', function () {
         // If the id = state, if state name => changes to abbreviation
         if (id === 'state') {
             filters[id] = changeStateAbbr(filters[id]);
+        }
+
+        if (id === 'country') {
+            filters[id] = changeCountryAbbr(filters[id]);
         }
 
         function sightingData(sighting) {
